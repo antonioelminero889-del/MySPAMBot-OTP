@@ -11,7 +11,9 @@ try: # Import Module
     import bs4      # Untuk variasi output
 except ImportError:
     subprocess.check_call([sys.executable, "-m", "pip", "install", 'requests'])
-    subprocess.check_call([sys.executable, "-m", "pip", "install", 'urllib3'])
+    subprocess.che
+
+    ck_call([sys.executable, "-m", "pip", "install", 'urllib3'])
     subprocess.check_call([sys.executable, "-m", "pip", "install", 'bs4'])
 finally:
     import requests # Post, Get, & Put URL API
